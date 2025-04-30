@@ -110,6 +110,13 @@ for txt in leg.get_texts()[:2]:
 for txt in leg.get_texts()[2:]:
     txt.set_fontsize(11)
 
+fig.suptitle(
+    "US Issuance of Green Bond and Wildfire", 
+    x=0.5,   # center
+    y=0.93,  # almost at the very top of the figure
+    fontsize=20,
+    fontweight='bold'
+)
 plt.tight_layout()
 plt.savefig("plot.png", dpi=300, bbox_inches="tight")
 plt.show()

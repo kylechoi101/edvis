@@ -136,11 +136,21 @@ fig.suptitle(
 fig.text(
     0.5,                     # x center
     0.91,                    # just under the title
-    "Return on Investment (ROI) as metric",
+    "Country: United States",
     ha='center', 
     va='center',
     fontsize=16,
     color='gray'
+)
+# subtitle: bigger & just below the title
+fig.text(
+    0.5,                     # x center
+    0.11,                    # just under the title
+    "Return on Investment (ROI)",
+    ha='center', 
+    va='center',
+    fontsize=10,
+    color = 'blue'
 )
 
 plt.tight_layout()

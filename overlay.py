@@ -2,6 +2,7 @@ from PIL import Image, ImageDraw, ImageFont
 import matplotlib.pyplot as plt
 
 title_font =ImageFont.truetype("/System/Library/Fonts/Supplemental/Arial Bold.ttf", 100)
+text_font =ImageFont.truetype("/System/Library/Fonts/Supplemental/Arial Bold.ttf", 50)
 
 # Load the wildfire image (background) and the graph image
 wildfire_img = Image.open("wildfire.png").convert("RGBA")
