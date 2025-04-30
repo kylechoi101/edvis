@@ -14,6 +14,7 @@
         --color-neutral-30: hsl(220 10% 30%);
         --color-neutral-20: hsl(220 10% 20%);
         --color-neutral-10: hsl(220 10% 10%);
+        --color-highlight: hsl(76, 56%, 59%);
       }
 
       html {
@@ -147,6 +148,16 @@
         height: auto;          /* preserves aspect ratio */
         object-fit: contain;   /* or “cover” if you want it to crop to fill */
       }
+      a.email {
+        color: var(--color-neutral-30);
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+      a.email:hover {
+        color: var(--color-highlight);
+        text-decoration: underline;
+        cursor: pointer;
+      }
     </style>
   </head>
 
@@ -156,8 +167,15 @@
         <small>Assignment 4</small>
         Persuasive or Deceptive Visualization?
       </h1>
-
-      <p><strong>Your Name</strong> — <em>Your UCSD Email Address</em></p>
+      <p>
+        <strong>Kyle Choi</strong> — 
+        <em>
+          <a href="mailto:k3choi@ucsd.edu" class="email">
+            k3choi@ucsd.edu
+          </a>
+        </em>
+        
+      </p>
     </header>
 
     <main>
@@ -229,6 +247,10 @@
       
         <p><strong>Acceptable Persuasion vs. Misleading Tricks</strong><br>
         In practice, I’ve learned that many “earnest” techniques can also persuade effectively: meaningful color, transparent transformations, clear annotations. Even removing outliers, when done transparently, can sharpen focus without betraying the dataset. But tactics like cherry-picking, swapping units without notice, or erasing axis references offer no educational benefit. Going forward, I’ll embrace creative visualization choices that enrich understanding, while drawing the line firmly at any action that conceals or distorts the data’s full story.</p>
+        
+        
+        <p><strong>Web Design</strong><br>
+        I added hover feature I learned from the lab:)
       </section>      
     </main>
   </body>
